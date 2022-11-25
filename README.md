@@ -19,11 +19,16 @@ This CCXT Trading Bot is pre-configured for deployment on Heroku.  You only need
 6. Postman Testing (Optional, but recommended)  
    <ol> Install project packages</ol>
    <ol> In terminal, enter commands: </ol>
-   <ol> set FLASK_APP = app.py</ol>
-   <ol> $env:FLASK_ENV = "development"</ol>
-   <ol> flask run</ol>
+   
+   ```
+   set FLASK_APP = app.py
+   
+   $env:FLASK_ENV = "development"
+   
+   flask run
+   ```
 
-    Now you can test your bot locally via Postman. Make sure it will communicate with your exchange and execute orders correctly, and rejects all unauthorized requests.
+    Now you can test your bot locally via Postman. Make sure it will communicate with your exchange and execute orders correctly, and rejects any unauthorized requests.
 
 7. On Heroku, create a new app, and follow Heroku CLI instructions for uploading this project directly without Github.
    <b>Do not post your project to Github! It contains your secret keys.</b> Heroku will build and deploy it automatically.
