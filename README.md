@@ -30,8 +30,7 @@ This CCXT Trading Bot is pre-configured for deployment on Heroku.  You only need
 
     Now you can test your bot locally via Postman. Make sure it will communicate with your exchange and execute orders correctly, and rejects any unauthorized requests.
 
-7. On Heroku, create a new app, and follow Heroku CLI instructions for uploading this project directly without Github.
-   <b>Do not post your project to Github! It contains your secret keys.</b> Heroku will build and deploy it automatically.
+7. On Heroku, create a new app, and follow Heroku instructions for either uploading directly from your local or for a Github repo.  <b>NOTE: Since this contains your account keys, if you upload to Github, make sure it is set to private.</b> Heroku will build and deploy it automatically.  If there are any build errors, make sure all the packages versions agree with Heroku's Python environment.
 
 8. Provide your webhook endpoint and JSON-formatted password to whatever service will be making the requests.  
    
